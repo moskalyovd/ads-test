@@ -98,8 +98,6 @@ class DoctrineAdsRepository implements AdsRepositoryInterface
               ->select('max(price) as price, id, text, `limit`, banner')
               ->from('ads')
               ->where('`limit` > views_count')
-              ->addOrderBy('views_count
-', 'DESC')
               ->setMaxResults(1)
               ->fetchAssociative();
 
