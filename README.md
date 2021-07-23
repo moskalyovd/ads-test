@@ -11,6 +11,9 @@ docker-compose up
 ```
 composer install
 php init_db.php
+// Это хак на скорую руку
+chmod ugo+w config/
+chmod ugo+w config/ads.db
 ```
 
 3. В API есть 3 эндпоинта
