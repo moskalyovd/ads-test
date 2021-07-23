@@ -19,7 +19,7 @@ class PimpleClassLoader implements IClassLoader
     }
 
     /**
-     * Load class
+     * Грузим классы для роутера
      *
      * @param string $class
      * @return object
@@ -38,7 +38,8 @@ class PimpleClassLoader implements IClassLoader
     }
 
     /**
-     * Called when loading class method
+     * Грузим методы класса для роутера
+     *
      * @param object $class
      * @param string $method
      * @param array $parameters
@@ -63,7 +64,7 @@ class PimpleClassLoader implements IClassLoader
     }
 
     /**
-     * Load closure
+     * Грузим замыкания для роутера
      *
      * @param Callable $closure
      * @param array $parameters
