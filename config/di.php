@@ -10,7 +10,6 @@ use App\Service\AdsService;
 
 $container = new Container();
 
-// TODO: решить проблему с зависимостью от doctine dbal connection
 $container[AdsRepositoryInterface::class] = function (Container $c) use ($conn) {
     return new DoctrineAdsRepository($conn);
 };
